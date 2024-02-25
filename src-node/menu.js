@@ -36,21 +36,12 @@ const createTemplate = (isMacSystem = false, webView) => {
           label: 'light',
           click: () => {
             webView.webContents.send('switch-theme', 'light')
-            console.log('switch Light theme')
           }
         },
         {
           label: 'dark',
           click: () => {
             webView.webContents.send('switch-theme', 'dark')
-            console.log('switch dark theme')
-          }
-        },
-        {
-          label: 'profile',
-          click: () => {
-            webView.webContent.send('switch-theme', 'profile')
-            console.log('switch profile theme')
           }
         }
       ]
